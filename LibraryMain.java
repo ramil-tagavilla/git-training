@@ -1,5 +1,8 @@
 public class LibraryMain {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Library Management System!");
+        Library library = new Library();
+        library.addBook("The Great Gatsby");
+        System.out.println(library.searchBook("The Great Gatsby"));
+        System.out.println(library.searchBook("1984"));
     }
 }
