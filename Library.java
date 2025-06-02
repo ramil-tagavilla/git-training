@@ -32,4 +32,14 @@ public class Library {
 		}
 	}
 
+	public String returnBook(String book) {
+		if (issuedBooks.contains(book)) {
+			issuedBooks.remove(book);
+			books.add(book);
+			return "Book returned: " + book;
+		} else {
+			return "Book was not issued.";
+		}
+	}
+
 }
