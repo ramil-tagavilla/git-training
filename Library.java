@@ -42,4 +42,9 @@ public class Library {
 		}
 	}
 
+	public void viewCatalog() {
+		System.out.println("Available books: " + books);
+		System.out.println("Issued books: " + issuedBooks);
+	}
+
 }
